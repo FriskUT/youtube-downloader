@@ -1,0 +1,86 @@
+/* Body and Background */
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+/* Card Styling */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+h2 {
+    font-weight: 600;
+    color: #76c7c0; /* Light teal color for headings */
+    font-size: 2rem;
+}
+
+/* Form Styling */
+.form-control, .form-select {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Focus Effect for Inputs */
+.form-control:focus, .form-select:focus {
+    background-color: #444;
+    border-color: #76c7c0;
+    color: white;
+}
+
+/* Button Styling */
+button {
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #76c7c0;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #4f8b8f;
+}
+
+/* Animations */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Custom FadeIn Up Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
